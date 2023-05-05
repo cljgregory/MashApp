@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 90vw;
+    max-width: 37em;
+    padding: 3em 1.8em;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin: 50px auto;
+    border-radius: 0.6em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 1.5em;
+}
+
+.search-container input, .search-container button {
+    font-size: 0.9em;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+.search-container input {
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #ffffff;
+    padding: 0.7em;
+    border-radius: 0.3em 0 0 0.3em;
+}
+
+.search-container button {
+    border: none;
+    cursor: pointer;
+    background-color: #4ca1af;
+    color: #ffffff;
+    padding: 0.7em;
+    border-radius: 0 0.3em 0.3em 0;
+    transition: background-color 0.2s;
+}
+
+.search-container button:hover {
+    background-color: #3498db;
+}
+
+.info {
+    display: flex;
+    margin-top: 20px;
+    color: white;
+}
+
+.poster {
+    width: 300px;
+    height: 450px;
+    margin-right: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.3em;
+}
+
+.details {
+    flex: 1;
+}
+
+.rating {
+    margin-top: 20px;
+}
+
+.genre {
+    margin-top: 5px;
+}
+
+.details-info {
+    display: flex;
+    margin-top: 10px;
+}
+
+.details-label {
+    font-weight: bold;
+    width: 60px;
+}
+
+.details-value {
+    margin-left: 10px;
+}
+
+.plot {
+    padding-top: 1%;
+    color: white;
+}
+
+.cast {
+    padding-top: 5%;
+    color: white;
+}
+
+
+.trailer {
+    margin-top: 1.5em;
+}
+
+.trailer h3 {
+    margin-bottom: 0.5em;
+}
+
+.trailer iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 0.3em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .container{
+        font-size: 14px;
+    }
+    .poster{
+        margin: auto;
+        width: auto;
+        max-height: 10.8em;
+    }
+
+    .info{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
